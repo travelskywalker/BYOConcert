@@ -40,6 +40,16 @@
 		margin: 0 auto !important;
 		width: 21rem !important;
 	}
+	.tnc-container{
+		height: 85%;
+		width: 50%;
+		margin: 0 auto;
+		overflow: scroll;
+	}
+	#tnc a.modal-close.left {
+		padding: 11px !important;
+		font-size: 40px !important;
+	}
 }
 /*medium to small screen*/
 @media only screen and (max-width: 992px) {
@@ -195,6 +205,9 @@ input:focus,div#learnmore:focus {
 .input-field {
 	margin-top: 0;
 }
+.submit.input-field{
+	margin-top: 1rem;
+}
 div#learnmore {
 	border-radius: 10px;
 	transform: translateY(-50%) !important;
@@ -254,4 +267,56 @@ i.left {
 ol{
 	font-size: 10px;
     font-family: gotham-medium;
+}
+
+.tnc span{
+	font-size: 10px !important;
+    font-family: gotham-medium;
+    line-height: .9rem !important;
+    color: #ffffff;
+}
+
+.tnc span::after{
+	transform: scale(.9) !important;
+	background-color: #D8D20E !important;
+	border: 4px solid #ffffff !important;
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:before, [type="radio"].with-gap:checked+span:after{
+	border: 2px solid #ffffff !important;
+}
+[type="radio"]:not(:checked)+span:before, [type="radio"]:not(:checked)+span:after {
+    border: 2px solid #ffffff;
+}
+
+[type="radio"]:not(:checked)+span:after {
+    background-color: #ffffff !important;
+}
+a.tnc-text {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+div#tnc {
+    top: 0 !important;
+    width: 100%;
+	min-height: 100% !important;
+	background: none !important;
+}
+#tnc .modal-content {
+	height: 100%;
+	background: #000000b3;
+}
+
+#tnc .modal-footer {
+    position: relative;
+    background: #000000b3;
+}
+#tnc i.small {
+    color: #fff;
+}
+#tnc .modal-content, #tnc p {
+    color: #ffffff;
+}
+ol {
+    -webkit-padding-start: 10px !important;
 }

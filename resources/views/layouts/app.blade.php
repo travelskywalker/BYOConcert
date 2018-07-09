@@ -18,9 +18,9 @@
 
     <!-- Styles -->
     <!-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
-    <link href="{{ asset('materialize/css/materialize.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
+    <link href="/materialize/css/materialize.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/fonts.css" rel="stylesheet">
 
 
 
@@ -38,6 +38,14 @@
             <p class="text-darken">
                 @include('nomination.mechanics')
             </p>
+        </div>
+</div>
+<div id="tnc" class="modal modal-fixed-footer">
+    <div class="modal-footer">
+        <a class="modal-close left"><i class="small material-icons">close</i></a>
+    </div>
+        <div class="modal-content">
+                @include('nomination.tnc')
         </div>
 </div>
     <div id="app">

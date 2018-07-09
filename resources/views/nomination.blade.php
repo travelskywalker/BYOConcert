@@ -37,7 +37,13 @@
 				          <input id="school" name="school_name" type="text" class="validate browser-default s12" placeholder="School Name" autocomplete="off">
 				          
 				        </div>
-				        <div class="input-field col s12 center-align">
+						<div class="col s12 tnc">
+							<label>
+							<input class="with-gap" name="tnc" id="tnc_radio" type="radio" />
+							<span>By submitting your information, you are therefore agreeing to our <a class="tnc-text modal-trigger" href="#tnc">Terms & Conditions and Privacy Policy.</span></span>
+							</label>
+						</div>
+				        <div class="submit input-field col s12 center-align">
 				        	<a class="btn default-button submit-nomination">Submit
 							    <i class="material-icons left">keyboard_return</i>
 							  </a>
