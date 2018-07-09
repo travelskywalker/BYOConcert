@@ -59,7 +59,6 @@ $(document).ready(function(){
     }
   });
 
-
   $("#tnc_radio").click(function() {
     // Get the storedValue
     var previousValue = $(this).data('storedValue');
