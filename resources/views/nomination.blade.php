@@ -22,7 +22,7 @@
 	<div class="nomination-page-2 col s12 l6 center-align shh lfh no-padding">
 		<div class="full-height-inner center-align center-container valign-wrapper">
 			<form class="col s12 l8 offset-l2" id="nomination_form" method="POST" action="{{ route('submit-nomination') }}"> @csrf
-				<div class="svh">
+			<div class="svh">
 					<div class="full-width left-align padding">
 						<div class="col s12">
 							<h5 class="nominate-title">Nominate your School</h5>
@@ -37,12 +37,12 @@
 				          <input id="school" name="school_name" type="text" class="validate browser-default s12" placeholder="School Name" autocomplete="off">
 				          
 				        </div>
-						<div class="col s12 tnc">
+						<p class="col s12 tnc">
 							<label>
-							<input class="with-gap" name="tnc" id="tnc_radio" type="radio" />
-							<span>By submitting your information, you are therefore agreeing to our <a class="tnc-text modal-trigger" href="#tnc">Terms & Conditions and Privacy Policy.</span></span>
+							<input class="with-gap s12" name="tnc" id="tnc_radio" type="radio" style="width: 20px"/>
+							<span>By submitting your information, you are therefore agreeing to our <a class="tnc-text modal-trigger" href="#tnc">Terms & Conditions and Privacy Policy.</span>
 							</label>
-						</div>
+						</p>
 				        <div class="submit input-field col s12 center-align">
 				        	<a class="btn default-button submit-nomination">Submit
 							    <i class="material-icons left">keyboard_return</i>
