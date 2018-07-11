@@ -1,7 +1,7 @@
 <table cellspacing="0" >
 <tr>
     <td style="border:1px solid black">School</td>
-    <td style="border:1px solid black">Vote Count</td>
+    <td style="border:1px solid black">Nomination</td>
 </tr>
 @foreach($data as $result)
 <tr>
