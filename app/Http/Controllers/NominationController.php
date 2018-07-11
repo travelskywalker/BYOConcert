@@ -169,4 +169,14 @@ class NominationController extends Controller
         // return view('result')->with(['result'=>$result]);
         return response()->json(['data'=>$result]);
     }
+
+    public function allResult(){
+        $result = DB::table('nominations')
+            ->selectRaw('school_name, COUNT(*) as vote_count')
+            ->orderby('vote_count','desc')
+            ->groupBy('nominations.school_name')
+            ->get();
+
+        return view('api.all')->with('data',$result);
+    }
 }
