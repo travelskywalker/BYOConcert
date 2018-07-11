@@ -160,7 +160,7 @@ class NominationController extends Controller
     }
 
     public function nominationResult(){
-        $result = DB::table('nominations')->take(5)
+        $result = DB::table('nominations')->take(10)
             ->selectRaw('school_name, COUNT(*) as vote_count')
             ->orderby('vote_count','desc')
             ->groupBy('nominations.school_name')
