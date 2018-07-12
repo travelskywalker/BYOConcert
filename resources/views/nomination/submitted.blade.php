@@ -4,8 +4,8 @@
 <div class="row full-height">
 	<div class="col s12 no-padding full-height valign-wrapper curtain-bg">
 		<div class="full-width lhw center-align text-darken">
-			<img class="logo" src="/images/BTOC_logo_FINAL.png">
-			<h5>YOU HAVE SUCCESSFULLY NOMINATED<br/>YOUR CHOSEN SCHOOL</h5>
+			<img class="logo" src="/images/BYOC_logo_v2.png">
+			<h5>YOU HAVE SUCCESSFULLY SUBMITTED<br/>YOUR SUGGESTED SCHOOL</h5>
 			<p class="success">Visit our social media accounts to stay posted<br/>on further announcements!</p>
 
 			<div class="soc-media-container">

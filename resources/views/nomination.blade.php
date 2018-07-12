@@ -6,7 +6,7 @@
 	<div class="nomination-page-1 col s12 l6 center-align shh lfh half-height no-padding valign-wrapper">
 		<div class="lfw shw full-height-inner center-align center-container valign-wrapper">
 			<div class="full-width">
-				<img class="logo" src="/images/BTOC_logo_FINAL.png">
+				<img class="logo" src="/images/BYOC_logo_v2.png">
 				<p>BITE AND SLURP YOUR WAY<br/>TO A FREE CONCERT</p>
 				<div class="band-container">
 					<h4>GRACENOTE</h4>
@@ -15,7 +15,8 @@
 					<h6>& more</h6>
 				</div>
 
-				<a class="modal-trigger" href="#learnmore">Learn more</a>
+				<p class="more-info">For more information, call Redlines Productions:<br/>0917 8733 596 / 0917 8291 844</a>
+				</p>
 			</div>
 		</div>
 	</div>
@@ -25,7 +26,7 @@
 			<div class="svh">
 					<div class="full-width left-align padding">
 						<div class="col s12">
-							<h5 class="nominate-title">Nominate your School</h5>
+							<h5 class="nominate-title">Suggest your School</h5>
 						</div>
 						<div class="input-field col s12">
 				          <input id="name" name="name" type="text" class="validate browser-default s12" placeholder="Your Full Name" autocomplete="off">
