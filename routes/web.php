@@ -13,7 +13,7 @@
 
 Route::get('/', function () {
     // return view('nominate');
-    return redirect()->route('nominate');
+    return redirect()->route('vote');
 });
 
 Auth::routes();
@@ -28,3 +28,7 @@ Route::get('/isNameRecorded/{name}', 'NominationController@isNameRecorded');
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/nominate','NominationController@index')->name('nominate');
+Route::get('/vote', 'VotingController@index')->name('vote');
+Route::get('/vote/{school}', 'VotingController@voteSchool')->name('vote-school');
+Route::get('/admin/voting/update', 'VotingController@update')->name('voting-update');
+Route::post('/admin/voting/send', 'VotingController@processUpdate')->name('send-update');

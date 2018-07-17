@@ -1,0 +1,19 @@
+var school_data = {
+    "nextUpdate" : "07/20/2018 12:00 AM", //mm/dd/yyyy hh:mm -- date and time
+    "schools" : [
+                {  //school 1
+                    "name" : "Dela Salle University", //school name
+                    "logo" : "logo.jpg", //logo image name
+                    "place": "1st Place", //place
+                    "progress": 60, //input should be number
+                    "barcode": "" //barcode image name
+                }, //end of school 1
+                { //school 2
+                    "name" : "National College of Science and Technology",
+                    "logo" : "logo.jpg",
+                    "place": "2nd Place",
+                    "progress": 100,
+                    "barcode": "" 
+                } //end of school 2
+                ]
+}
