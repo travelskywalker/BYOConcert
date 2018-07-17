@@ -16,7 +16,15 @@ class NominationController extends Controller
      */
     public function index()
     {
-        return view('nomination');
+        date_default_timezone_set('Asia/Manila');
+        $d = "18/07/2018";
+        $t = "23:59";
+        if(date('d/m/Y') == $d && date("H:i") >= $t){
+            return redirect()->route('tabulating');
+        }else{
+            return view('nomination');
+        }
+        
     }
 
     /**

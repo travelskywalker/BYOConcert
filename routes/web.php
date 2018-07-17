@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,12 +11,9 @@
 */
 
 Route::get('/', function () {
-    // return view('nominate');
     return redirect()->route('nominate');
 });
-
-Auth::routes();
-
+// Auth::routes();
 // protected routes
 // Route::group(['middleware' => ['auth']], function() {
 Route::get('/schools/{name}', 'NominationController@getSchool');
@@ -25,6 +21,10 @@ Route::post('/submit-nomination', 'NominationController@create')->name('submit-n
 Route::get('/submitted', 'NominationController@submitted')->name('submitted');
 Route::get('/isNameRecorded/{name}', 'NominationController@isNameRecorded');
 // });
-
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/nominate','NominationController@index')->name('nominate');
+
+// under construction
+Route::get('/tabulating-result',function(){
+    return view('under-construction.under-construction');
+})->name('tabulating');
