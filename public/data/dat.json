@@ -1,19 +1,145 @@
 var school_data = {
-    "nextUpdate" : "07/20/2018 12:00 AM", //mm/dd/yyyy hh:mm -- date and time
+    "nextUpdate" : "08/15/2018 12:00 AM", //mm/dd/yyyy hh:mm -- date and time
     "schools" : [
                 {  //school 1
-                    "name" : "Dela Salle University", //school name
-                    "logo" : "logo.jpg", //logo image name
+                    "name" : "BASC", //school name
+                    "logo" : "BASC.png", //logo image name
                     "place": "1st Place", //place
-                    "progress": 60, //input should be number
-                    "barcode": "" //barcode image name
+                    "progress": 0, //input should be number
+                    "barcode": "BASC.png" //barcode image name
                 }, //end of school 1
-                { //school 2
-                    "name" : "National College of Science and Technology",
-                    "logo" : "logo.jpg",
+                { 
+                    "name" : "LCUP",
+                    "logo" : "LCUP.png",
                     "place": "2nd Place",
-                    "progress": 100,
-                    "barcode": "" 
-                } //end of school 2
+                    "progress": 0,
+                    "barcode": "LCUP.png" 
+                }, 
+                {  
+                    "name" : "LPUB", //school name
+                    "logo" : "LPUB.png", //logo image name
+                    "place": "3rd Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "LPUB.png" //barcode image name
+                },
+                {  
+                    "name" : "NU", //school name
+                    "logo" : "NU.png", //logo image name
+                    "place": "4th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "NU.png" //barcode image name
+                },
+                {  
+                    "name" : "PSU", //school name
+                    "logo" : "PSU.png", //logo image name
+                    "place": "5th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "PSU.png" //barcode image name
+                },
+                {  
+                    "name" : "UE Caloocan", //school name
+                    "logo" : "UE.png", //logo image name
+                    "place": "6th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "UE.png" //barcode image name
+                },
+                {  
+                    "name" : "PLMun", //school name
+                    "logo" : "PLMun.png", //logo image name
+                    "place": "7th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "PLMun.png" //barcode image name
+                },
+                {  
+                    "name" : "PCC", //school name
+                    "logo" : "PCC.png", //logo image name
+                    "place": "8th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "PCC.png" //barcode image name
+                },
+                {  
+                    "name" : "PATTS", //school name
+                    "logo" : "PATTS.png", //logo image name
+                    "place": "9th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "PATTS.png" //barcode image name
+                },
+                {  
+                    "name" : "PNU", //school name
+                    "logo" : "PNU.png", //logo image name
+                    "place": "10th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "PNU.png" //barcode image name
+                },
+                {  
+                    "name" : "PSBA QC", //school name
+                    "logo" : "PSBAQC.png", //logo image name
+                    "place": "11th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "PSBAQC.png" //barcode image name
+                },
+                {  
+                    "name" : "PUP SMB", //school name
+                    "logo" : "PUPSMB.png", //logo image name
+                    "place": "12th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "PUPSMB.png" //barcode image name
+                },
+                {  
+                    "name" : "RTU-Boni", //school name
+                    "logo" : "RTU.png", //logo image name
+                    "place": "13th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "RTU.png" //barcode image name
+                },
+                {  
+                    "name" : "SBCA", //school name
+                    "logo" : "SBCA.png", //logo image name
+                    "place": "14th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "SBCA.png" //barcode image name
+                },
+                {  
+                    "name" : "SSC-R", //school name
+                    "logo" : "SSCR.png", //logo image name
+                    "place": "15th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "SSCR.png" //barcode image name
+                },
+                {  
+                    "name" : "STI GLOBAL", //school name
+                    "logo" : "STIGLOBAL.png", //logo image name
+                    "place": "16th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "STIGLOBAL.png" //barcode image name
+                },
+                {  
+                    "name" : "STI ORCA", //school name
+                    "logo" : "STIORCA.png", //logo image name
+                    "place": "17th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "STIORCA.png" //barcode image name
+                },
+                {  
+                    "name" : "TIP Manila", //school name
+                    "logo" : "TIPManila.png", //logo image name
+                    "place": "18th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "TIPManila.png" //barcode image name
+                },
+                {  
+                    "name" : "TUA", //school name
+                    "logo" : "TUA.png", //logo image name
+                    "place": "19th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "TUA.png" //barcode image name
+                },
+                {  
+                    "name" : "WVSU", //school name
+                    "logo" : "WVSU.png", //logo image name
+                    "place": "20th Place", //place
+                    "progress": 0, //input should be number
+                    "barcode": "WVSU.png" //barcode image name
+                },
                 ]
 }

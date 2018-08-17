@@ -3,7 +3,9 @@ $(document).ready(function(){
   remain();
 
   if($('.school-page').length > 0){
+    console.log($(document).width())
     getSchoolPageData();
+    if($(document).width() <= 992) $('.school-list-view').height($('.school-top-container').height() - ($('.school-top-details').height()+35));
   }
   
   $('.modal').modal({
@@ -99,10 +101,6 @@ $(document).ready(function(){
     $('.school-stage-view').toggle();
     $('.school-list-view').toggle();
   });
-
-  $('.barcode-download').click(function(){
-    alert('download barcode');
-  });
   
 });
 
@@ -193,7 +191,7 @@ function listView(data){
 console.log(data)
   var container = "";
   container+='<div class="grid" name="'+data.name+'">';
-  container+='<div class="school-logo"><img class="responsive-img" src="/logo/'+data.logo+'"></div>'; 
+  container+='<div class="school-logo"><img class="responsive-img" src="/images/schools/logo/'+data.logo+'"></div>'; 
   container+='<div class="g-content">';
   container+='<div class="stage"></div>';
   container+='<div class="school-details">';
@@ -224,14 +222,36 @@ function getSchoolPageData(){
 
 // load school data in school page
 function loadSchoolPageData(data){
-  console.log(data);
-  $('.school-logo').html('<img class="responsive-img" src="'+data.logo+'">');
+  console.log(getStageProgress(data.progress));
+  $('.school-stage-view').addClass('stage-'+getStageProgress(data.progress));
+  $('.school-list-view').html('<img class="responsive-img" src="/images/icon-'+getStageProgress(data.progress)+'.png">');
+  $('.school-logo').html('<img class="responsive-img" src="/images/schools/logo/'+data.logo+'">');
   $('.school-place').html(data.place);
   $('.school-name').html(data.name);
+
+  $('.barcode-area').html('<img class="responsive-img" src="/images/schools/barcode/'+data.barcode+'">');
+
+  $('.barcode-download').attr('href', '/images/schools/barcode/'+data.barcode);
   // get stage display
   // get progress icon display
   $('.bar-progress').css('width', data.progress+'%');
+  if(data.progress <= 35){
+    $('.percent-container').css('position', 'absolute').css('margin-left', data.progress+'%');
+  }
+
+  if(data.progress == 100){
+    $('.bar-prompt').html('completed').css('font-size','10px');
+  }
+
+  if(data.progress == 0){
+    $('.bar-progress').css('background','none');
+  }
+
   $('.percent').html(data.progress+'%');
+}
+
+function getStageProgress(progress){
+  return Math.trunc(progress/7);
 }
 
 // countdown timer

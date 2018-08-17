@@ -35,9 +35,7 @@
                     <div class="school-name">Dela Salle Univrsity</div>
                     <div class="switch-button">Switch to List View</div>
                 </div>
-                <div class="col s12 l7 stage school-stage-view">
-                    stage view
-                </div>
+                <div class="col s12 l7 stage school-stage-view"></div>
                 <div class="col s12 l7 stage school-list-view">
                     list view
                 </div>
@@ -45,7 +43,7 @@
                     <div class="valign-wrapper col s12 l8">
                         <div class="bar-container s12 l6">
                             <div class="bar-progress">
-                                <span class="percent">60%</span><span class="bar-prompt">until milestone<br/>complete</span>
+                                <div class="percent-container"><span class="percent">60%</span><span class="bar-prompt">until milestone<br/>complete</span></div>
                             </div>
                         </div>
                     </div>
@@ -60,12 +58,9 @@
                 <div class="col s12 double-padding b-c">
                 <h5 class="nominate-title">HELP BUILD THIS STAGE</h5>
                 <p>Use this barcode each time you buy a Slurpee & Big Bite combo to earn points for your school.</p>
-                <p style="
-                            border: 1px solid;
-                            height: 50px;
-                        ">barcode area</p>
+                <div class="barcode-area" >barcode area</div>
                 <div class="col s7 left-align no-margin no-padding">
-                        <a class="btn default-button barcode-download">Download
+                        <a class="btn default-button barcode-download" download>Download
                             <i class="material-icons left">file_download</i>
                         </a>
                 </div>
