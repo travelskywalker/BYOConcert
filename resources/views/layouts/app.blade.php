@@ -33,6 +33,19 @@
             </p>
         </div>
 </div>
+
+<div id="subscribe" class="modal modal-fixed-footer">
+    <div class="modal-footer">
+        <a class="modal-close left"><i class="small material-icons">close</i></a>
+    </div>
+        <div class="modal-content">
+            <h5>RULES</h5>
+            <p class="text-darken">
+                @include('nomination.mechanics')
+            </p>
+        </div>
+</div>
+
 <div id="tnc" class="modal modal-fixed-footer">
     <div class="modal-footer">
         <a class="modal-close left"><i class="small material-icons">close</i></a>

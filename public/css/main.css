@@ -10,7 +10,7 @@
 	lfw{
 		width: 100%;
 	}
-	div#learnmore {
+	div#learnmore, div#subscribe {
 		width: 40%;
 		height: 50%;
 	}
@@ -95,6 +95,11 @@
 
 	.school-page .school-place {
 		margin-top: 10px;
+	}
+
+	.groupshot {
+		width: 70% !important;
+		margin: 0 auto;
 	}
 	
 }
@@ -335,7 +340,12 @@ input{
     font-size: 10px;
     font-style: italic;
 }
-input:focus,div#learnmore:focus {
+
+#subscribe input{
+	background: #EFEFEF;
+}
+
+input:focus,div#learnmore:focus, div#subscribe:focus {
     outline: none;
 }
 .input-field {
@@ -344,14 +354,14 @@ input:focus,div#learnmore:focus {
 .submit.input-field{
 	margin-top: 1rem;
 }
-div#learnmore {
+div#learnmore, div#subscribe {
 	border-radius: 10px;
 	transform: translateY(-50%) !important;
 }
-#learnmore .modal-content {
+#learnmore .modal-content, #subscribe .modal-content {
     padding-top: 0px;
 }
-#learnmore.modal-fixed-footer .modal-footer {
+#learnmore.modal-fixed-footer .modal-footer, #subscribe.modal-fixed-footer .modal-footer {
     top: 0;
 	position: initial;
 	height: 40px;
@@ -717,5 +727,9 @@ span.bar-prompt {
     padding: 0 !important;
 	overflow: scroll;
 	text-align: center;
+}
+
+.mail-img{
+	width: 20%;
 }
 

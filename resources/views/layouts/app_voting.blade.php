@@ -26,13 +26,35 @@
 <!-- Modal Structure -->
 <div id="learnmore" class="modal modal-fixed-footer">
     <div class="modal-footer">
-        <a class="modal-close left"><i class="small material-icons">close</i></a>
+        <a class="modal-close left" ><i class="small material-icons">close</i></a>
     </div>
         <div class="modal-content">
-            <h5>RULES</h5>
+            <h5>MECHANICS</h5>
             <p class="text-darken">
-                @include('nomination.mechanics')
+                @include('nomination.votingmechanics')
             </p>
+        </div>
+</div>
+
+<div id="subscribe" class="modal modal-fixed-footer">
+    <div class="modal-footer">
+        <a class="modal-close left" ><i class="small material-icons">close</i></a>
+    </div>
+        <div class="modal-content">
+            <div class="valign-wrapper" style="height: 100%">
+                <div style="width: 100%"> 
+                    <img src="/images/mail.png" class="mail-img">
+                    <h5>GET UPDATED ON<br/>THE LATEST SCORES</h5>
+                    <div class="input-field col s12">
+                        <input id="email" name="email" type="email" class="validate browser-default s12" placeholder="Enter e-mail address" autocomplete="off">
+                    </div>
+                    <div class="submit input-field col s12 center-align">
+                        <a class="btn default-button subscribe-button">Submit
+                            <i class="material-icons left">keyboard_return</i>
+                            </a>
+                    </div>
+                </div>
+        </div>
         </div>
 </div>
 <div id="tnc" class="modal modal-fixed-footer">

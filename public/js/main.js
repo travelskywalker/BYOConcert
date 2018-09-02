@@ -3,7 +3,6 @@ $(document).ready(function(){
   remain();
 
   if($('.school-page').length > 0){
-    console.log($(document).width())
     getSchoolPageData();
     if($(document).width() <= 992) $('.school-list-view').height($('.school-top-container').height() - ($('.school-top-details').height()+35));
   }
@@ -13,7 +12,19 @@ $(document).ready(function(){
     dismissible: false,
     startingTop: '50%',
     endingTop: '50%',
+    onCloseEnd: function(){
+      if($(this).attr('id')=='learnmore'){
+        // $('#subscribe').modal('open');
+        $('#subscribe').modal('open');
+      }
+    }
   });
+
+  // $('#subscribe').modal({
+  //   onCloseEnd: function(){
+  //     $('#email').val('');
+  //   }
+  // });
 
   $('#school').keyup(function(){
 
@@ -101,9 +112,29 @@ $(document).ready(function(){
     $('.school-stage-view').toggle();
     $('.school-list-view').toggle();
   });
+
+  $('.subscribe-button').click(function(){
+    var email = $('#email').val();
+    if(email != '' && validateEmail(email)){
+      var url = '/admin/subscribe/'+email;
+      sendAPI('GET', url,'').then(function(response){
+        if(response.message == 'success'){
+          $('#subscribe').modal('close');
+          $('#email').val('');
+        }else if(response.message == 'existing'){
+          alert('email exist!')
+        }
+      });
+    }
+    
+  });
   
 });
 
+function validateEmail(email){
+  let filter = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,6})+$/;
+  return filter.test(email);
+}
 
 function isNameRecorded(){
   sendAPI('GET','/isNameRecorded/'+$('#name').val()).then(function(response){
@@ -138,7 +169,6 @@ function getSchoolSuggestion(name){
 
   });
 }
-
 
 function sendAPI(method,url,data){
   return(
@@ -179,7 +209,6 @@ function listSchool(){
     var schools = school_data.schools;
     $.each(schools, function( key, value ) {
       // alert( key + ": " + value );
-      console.log(key,value)
 
       // append to container
       $('.grid-container').append(listView(value));
@@ -188,7 +217,6 @@ function listSchool(){
 }
 
 function listView(data){
-console.log(data)
   var container = "";
   container+='<div class="grid" name="'+data.name+'">';
   container+='<div class="school-logo"><img class="responsive-img" src="/images/schools/logo/'+data.logo+'"></div>'; 
@@ -214,7 +242,6 @@ function getSchoolPageData(){
   // get school data 
   $.each(school_data.schools, function(key,val){
     if(val.name == lastsegment){
-      console.log("this school is "+val.name);
       loadSchoolPageData(val);
     }
   });
@@ -222,7 +249,6 @@ function getSchoolPageData(){
 
 // load school data in school page
 function loadSchoolPageData(data){
-  console.log(getStageProgress(data.progress));
   $('.school-stage-view').addClass('stage-'+getStageProgress(data.progress));
   $('.school-list-view').html('<img class="responsive-img" src="/images/icon-'+getStageProgress(data.progress)+'.png">');
   $('.school-logo').html('<img class="responsive-img" src="/images/schools/logo/'+data.logo+'">');
@@ -265,8 +291,6 @@ function remain() {
   var now = new Date(),
       between = end - now;
 
-  // var days = Math.floor(between / day),
-  //     hours = Math.floor((between % day) / hour),
       hours = Math.floor(between/hour);
       minutes = Math.floor((between % hour) / min),
       seconds = Math.floor((between % min) / sec);
@@ -276,9 +300,6 @@ function remain() {
       minString = 'mins ',
       secString = 'secs ';
 
-  // if (days == 1) {
-  //     dayString = 'day ';
-  // };
   if (hours == 1) {
       hourString = 'hr ';
   };

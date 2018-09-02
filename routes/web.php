@@ -32,3 +32,6 @@ Route::get('/vote', 'VotingController@index')->name('vote');
 Route::get('/vote/{school}', 'VotingController@voteSchool')->name('vote-school');
 Route::get('/admin/voting/update', 'VotingController@update')->name('voting-update');
 Route::post('/admin/voting/send', 'VotingController@processUpdate')->name('send-update');
+
+
+Route::get('/admin/subscribe/{email}', 'SubscriberController@subscribe');
