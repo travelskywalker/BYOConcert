@@ -2,7 +2,7 @@
 <li>Contest runs from August 25 to October 9, 2018.</li>
 <li>Buy a Slurpee &amp; Big Bite Rock Back to School Combo for only P60!
 <ol style="list-style-type: lower-alpha;">
-<li>Slurpee &amp; Big Bite Combo is any combination of: Big Bite Hotdog flavor (of P30<br />worth variants) and Slurpee 22oz (any flavor) for P60 only (save P6)</li>
+<li>Slurpee &amp; Big Bite Combo is any combination of: Big Bite Hotdog flavor (of P30 worth variants) and Slurpee 22oz (any flavor) for P60 only (save P6)</li>
 </ol>
 </li>
 <li>20 schools will be pre-selected to join the contest based on the following considerations:
@@ -33,7 +33,7 @@
 <li>Customers can watch their respective school&rsquo;s stages grow on the microsite, <strong>711byoconcert.7-eleven.com.ph</strong>
 <ol style="list-style-type: lower-roman;">
 <li>Unlock different elements to be added to the stage as you go, depending on the total number of Slurpee &amp; Big Bite combos purchased per school. The more the combos, the more complete your stage will be.</li>
-<li>View your school&rsquo;s progress, check up on other schools&rsquo; stages, and<br />share updates on your social media accounts.</li>
+<li>View your school&rsquo;s progress, check up on other schools&rsquo; stages, and share updates on your social media accounts.</li>
 <li>The microsite will be updated weekly with the following details:
     <ol style="list-style-type: disc;">
     <li>Store number</li>
