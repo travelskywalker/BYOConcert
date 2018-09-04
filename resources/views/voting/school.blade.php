@@ -17,26 +17,44 @@
                 <!-- <p class="more-info">For more information, call Redlines Productions:<br/>0917 8733 596 / 0917 8291 844</a> -->
                 </p>
             </div>
-            <div class="bands">
+            
+        </div>
+        <div class="bands">
                 <div class="groupshot">
                     <img class="responsive-img" src="/images/groupshot.png">
                 </div>
             </div>
-        </div>
-        
     </div>
-    <div class="col s12 l6 no-padding bottom-section ">
+    <div class="col s12 l6 no-padding bottom-section center-align">
     
         <div class="school-top-section">
             <div class="row padding school-top-container" >
-                <div class="col s12 l5 school-top-details" style="padding: 15px 0;">
-                    <div class="school-logo">logo</div>
-                    <div class="school-place">1st place</div>
-                    <div class="school-name">Dela Salle Univrsity</div>
+                <!-- old -->
+                <div class="col s12 l5 school-top-details" style="padding: 15px 0; display: none">
+                    <div class="school-logo"></div>
+                    <div class="school-place"></div>
+                    <div class="school-name"></div>
                     <div class="switch-button">Switch to List View</div>
                 </div>
-                <div class="col s12 l7 stage school-stage-view"></div>
-                <div class="col s12 l7 stage school-list-view">
+                <!-- end of old -->
+                <div class="col s12 school-pre-details no-padding">
+                    <div class="school-logo"></div>
+                    <div class="school-name"></div>
+                    <div class="back-button"></div>
+                </div>
+
+                <div class="col s12 pre-launch-stage">
+                    <img class="responsive-img" src="/images/stage-pre-launch.png">
+                </div>
+
+                <div class="col s12 pre-launch-icon">
+                    <img class="responsive-img" src="/images/pre-launch-icons.png">
+                </div>
+
+                <div class="switch-button">Switch to List View</div>
+
+                <!-- <div class="col s12 stage school-stage-view"></div>
+                <div class="col s12 stage school-list-view">
                     list view
                 </div>
                 <div class="col bar s12">
@@ -47,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <div class="school-bottom-section">
@@ -56,19 +74,20 @@
             </div>
             <div class="row no-margin">
                 <div class="col s12 double-padding b-c">
-                <h5 class="nominate-title">HELP BUILD THIS STAGE</h5>
-                <p>Use this barcode each time you buy a Slurpee & Big Bite combo to earn points for your school.</p>
+                <h5 class="nominate-title">BRING #AUTOGRACEAVENUE TO YOU</h5>
+                <p>Use this barcode each time you buy a Slurpee & Big Bite combo to earn points for your school. Make sure to tell your friends - only the top 8 schools get a free concert.</p>
                 <div class="barcode-area" >barcode area</div>
-                <div class="col s7 left-align no-margin no-padding">
-                        <a class="btn default-button barcode-download" download>Download
+                <div class="col s7 right-align no-margin right-padding">
+                        <a class="btn btn-small default-button barcode-download" download>Download
                             <i class="material-icons left">file_download</i>
                         </a>
                 </div>
-                <div class="col s5 right-align no-margin no-padding">
+                <div class="col s5 left-align no-margin left-padding">
                 <div class="soc-media-container">
-                    <a href="http://www.facebook.com/711philippines"><img src="/images/facebook.png"></a>
-                    <a href="http://www.twitter.com/711philippines"><img src="/images/twitter.png"></a>
-                    <a href="http://www.instagram.com/711ph"><img src="/images/instagram.png"></a>
+                    
+                    <a class="fb-share" target="_blank"><img src="/images/facebook.png"></a>
+                    <a class="twitter-share" target="_blank" href="https://twitter.com/share"><img src="/images/twitter.png"></a>
+                    <!-- <a href="http://www.instagram.com/711ph"><img src="/images/instagram.png"></a> -->
                 </div>
                 </div>
                 </div>

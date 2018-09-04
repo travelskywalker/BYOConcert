@@ -31,13 +31,14 @@
                     <div class="counter-container"></div>
                 </div>
                 <div class="row full-width schools">
-                    <div class="col s12 left-align double-padding force-center-align">
-                        <h5 class="nominate-title">CLICK TO VIEW A STAGE</h5>
-                        <p>Compare your school’s concert progress to others</p>
+                    <div class="col s12 double-padding force-center-align">
+                        <h5 class="nominate-title">HOW CLOSE ARE YOU TO A FREE CONCERT?</h5>
+                        <p>Find your school's stage to check your progress.</p>
                     </div>
                 
-                    <div class="col s12 grid-container">
-                        
+                    <div class="col s12 grid-container"></div>
+                    <div class="col s12">
+                        <p>Only the top 8 schools will get a FREE concert</p>
                     </div>
                 </div>
             </div>

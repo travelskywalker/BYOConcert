@@ -49,7 +49,7 @@
                         <input id="email" name="email" type="email" class="validate browser-default s12" placeholder="Enter e-mail address" autocomplete="off">
                     </div>
                     <div class="submit input-field col s12 center-align">
-                        <a class="btn default-button subscribe-button">Submit
+                        <a class="btn btn-small default-button subscribe-button">Submit
                             <i class="material-icons left">keyboard_return</i>
                             </a>
                     </div>

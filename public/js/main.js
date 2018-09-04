@@ -2,9 +2,16 @@ $(document).ready(function(){
   listSchool();
   remain();
 
+ 
+
   if($('.school-page').length > 0){
     getSchoolPageData();
     if($(document).width() <= 992) $('.school-list-view').height($('.school-top-container').height() - ($('.school-top-details').height()+35));
+    //set fb share url
+    var url = window.location;
+    $('.fb-share').attr('href','https://www.facebook.com/sharer/sharer.php?u='+url);
+    // set twitter share url
+    $('.twitter-share').attr('data-url', url);
   }
   
   $('.modal').modal({
@@ -109,8 +116,10 @@ $(document).ready(function(){
       $(this).html('Switch to List View');
     }
 
-    $('.school-stage-view').toggle();
-    $('.school-list-view').toggle();
+    // $('.school-stage-view').toggle();
+    // $('.school-list-view').toggle();
+    $('.pre-launch-stage').toggle();
+    $('.pre-launch-icon').toggle();
   });
 
   $('.subscribe-button').click(function(){
@@ -128,8 +137,27 @@ $(document).ready(function(){
     }
     
   });
+
+  $('.back-button').click(function(){
+    window.history.back();
+  });
+
   
 });
+
+function responsive(){
+  $( window ).resize(function() {
+    fix_item();
+  });
+}
+
+function fix_item(){
+  //for pre launch size and icon area responsive
+  var school_top_container = $('.school-top-container').outerHeight();
+  var top_height = $('.school-pre-details img.responsive-img').outerHeight();
+  console.log(school_top_container);
+  $('.pre-launch-stage').css('height', school_top_container-(top_height+60));
+}
 
 function validateEmail(email){
   let filter = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,6})+$/;
@@ -217,11 +245,12 @@ function listSchool(){
 }
 
 function listView(data){
+
   var container = "";
   container+='<div class="grid" name="'+data.name+'">';
   container+='<div class="school-logo"><img class="responsive-img" src="/images/schools/logo/'+data.logo+'"></div>'; 
   container+='<div class="g-content">';
-  container+='<div class="stage"></div>';
+  container+='<div class="stage" style="background: url(\'/images/schools/logo/'+data.logo+'\')"></div>';
   container+='<div class="school-details">';
   container+='<div class="school-name">'+data.name+'</div>';
   container+='<div class="school-place">'+data.place+'</div>';
@@ -253,7 +282,7 @@ function loadSchoolPageData(data){
   $('.school-list-view').html('<img class="responsive-img" src="/images/icon-'+getStageProgress(data.progress)+'.png">');
   $('.school-logo').html('<img class="responsive-img" src="/images/schools/logo/'+data.logo+'">');
   $('.school-place').html(data.place);
-  $('.school-name').html(data.name);
+  $('.school-name').html(data.long_name);
 
   $('.barcode-area').html('<img class="responsive-img" src="/images/schools/barcode/'+data.barcode+'">');
 
