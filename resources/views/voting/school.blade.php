@@ -34,7 +34,7 @@
                     <div class="school-logo"></div>
                     <div class="school-place"></div>
                     <div class="school-name"></div>
-                    <div class="switch-button">Switch to List View</div>
+                    <!-- <div class="switch-button">Switch to List View</div> -->
                 </div>
                 <!-- end of old -->
                 <div class="col s12 school-pre-details no-padding">

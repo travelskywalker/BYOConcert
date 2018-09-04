@@ -510,7 +510,8 @@ ol {
     position: absolute;
     bottom: 0px;
     left: 0;
-    width: 100%;
+	width: 100%;
+	text-align: center;
 }
 
 .groupshot {
@@ -677,6 +678,11 @@ span.bar-prompt {
 	cursor: pointer;
 	font-size: 10px;
 	color: #D8D20E;
+	position: absolute;
+    bottom: 22px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 }
 
 .school-page .counter-container{
