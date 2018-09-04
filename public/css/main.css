@@ -1,5 +1,8 @@
 /*large screen*/
 @media only screen and (min-width: 993px){
+	.top-section, .bottom-section {
+		min-height: 650px !important;
+	}
 	.lfh{
 		height: 100%;
 	}
@@ -29,7 +32,7 @@
 		background-position: top !important;
 	}
 	h5 {
-		font-size: 2.28rem !important;
+		font-size: 2rem !important;
 		line-height: 110% !important;
 		margin: 1.52rem 0 .912rem 0 !important;
 	}
@@ -79,7 +82,6 @@
 	.grid-container {
 		max-height: 70vh;
 		overflow: scroll;
-		padding-top: 10px !important;
 	}
 
 	.barcode-area{
@@ -103,13 +105,20 @@
 	}
 	
 }
+/* medium to small screen */
+@media only screen and (max-width: 992px) and (orientation: landscape){
+	.top-section{
+		min-height: 530px !important;
+	}
+}
 /*medium to small screen*/
 @media only screen and (max-width: 992px) {
 	.shh {
 	    height: 50%;
 	}
 	.shw{
-		width: 50%
+		width: 50%;
+		/* max-width: 240px; */
 	}
 	.nomination-page-2.shh .valign-wrapper {
 	    display: block;
@@ -161,6 +170,7 @@
 	.school-page .counter{
 		margin-top: -10px;
 		position: absolute;
+		width: 100%;
 	}
 	
 }
@@ -188,13 +198,16 @@
     	margin-bottom: -11px !important;
 	}
 	h5.nominate-title {
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 
 	 .counter {
 		position: absolute;
 		margin-top: -10px;
 		width: 100%;
+	}
+	.header{
+		/* margin-top: -20vh; */
 	}
 
 }
@@ -637,10 +650,10 @@ span.bar-prompt {
 
 .school-page .school-logo {
 	border-radius: 50%;
-    box-shadow: -1px -1px 7px 3px #42424245;
+    /*box-shadow: -1px -1px 7px 3px #42424245;*/
     width: 60px;
 	height: 60px;
-	background: #ffffff;
+	/*background: #ffffff;*/
 }
 .school-top-container{
 	height: 100%;
@@ -732,4 +745,135 @@ span.bar-prompt {
 .mail-img{
 	width: 20%;
 }
+
+
+/*pre launch css*/
+.voting-page .school-logo{
+	display: none;
+}
+
+.voting-page .stage{
+	background-position: center !important;
+	background-size: cover !important;
+	height: 80% !important;
+	width: 80% !important;
+	margin: 0 auto;
+}
+
+.voting-page .school-place{
+	display: none;
+}
+
+.voting-page .school-name {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.barcode-area{
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 992px){
+	.school-page .bottom-section {
+	    margin-top: -86vh !important;
+	    height: 100vh !important;
+	}
+	.school-page .school-logo {
+	    position: inherit;
+	}
+	.school-page .school-name{
+		text-align: left;
+	    white-space: normal;
+	    font-size: 1rem;
+	    line-height: 1.2rem;
+	}
+
+	.pre-launch-stage{
+		height: calc(100% - 120px);
+	}
+
+	.pre-launch-icon{
+		height: calc(100% - 130px);
+	}
+
+	.counter-container {
+		background: #ffffff;
+		width: 270px;
+		height: 30px;
+		padding: 6px 12px;
+		text-align: center;
+		border-radius: 31px;
+		font-family: gotham-medium;
+		font-size: 13px;
+		color: #EA341C;
+		margin: 0 auto;
+		text-transform: uppercase;
+	}
+
+	.school-page .counter {
+		margin-top: -16px;
+	}
+}
+
+@media only screen and (min-width: 420px) and (max-width: 992px) {
+	.full-width.header{
+		margin-top: -20vh;
+	}
+	.groupshot {
+		width: 45%;
+	}
+	.groupshot img{
+		max-width: 245px;
+	}
+}
+
+@media only screen and (min-width: 993px){
+	.school-page .school-name{
+	    margin-left: 65px;
+	    margin-top: -53px;
+	    text-align: left;
+	    line-height: 1.5rem;
+	    font-size: 1.3rem;
+	    padding-right: 50px;
+	}
+
+	.stage {
+	    height: 90%;
+	}
+
+	.pre-launch-stage{
+		margin-top: 5%;
+		height: calc(100% - 100px);
+	}
+
+	.pre-launch-icon{
+		margin-top: 5%;
+		height: calc(100% - 120px);
+	}
+	
+}
+
+.back-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    background: url(/images/back_button.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.pre-launch-icon {
+    display: none;
+    overflow: scroll;
+    margin-bottom: 3%;
+}
+
+.pre-launch-stage img{
+	height: 100%;
+}
+
 
