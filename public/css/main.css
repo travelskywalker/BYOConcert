@@ -1,7 +1,13 @@
 /*large screen*/
 @media only screen and (min-width: 993px){
+	.col.s12.double-padding.force-center-align {
+		margin-top: -13px !important;
+	}
 	.top-section, .bottom-section {
 		min-height: 650px !important;
+	}
+	.header{
+		margin-top: -100px;
 	}
 	.lfh{
 		height: 100%;
@@ -18,13 +24,16 @@
 		height: 50%;
 	}
 	.logo{ 
-		width: 400px;
+		width: 50%;
 		margin-top: -11vh;
 	}
 	.nomination-page-1, {
 		background-size: 300% 125% !important;
 		background-repeat: no-repeat !important;
 		background-position: top !important;
+	}
+	h5.nominate-title {
+		margin-top: 0 !important;
 	}
 	.curtain-bg {
 		background-size: 190% 171% !important;
@@ -70,6 +79,7 @@
 	.bottom-section .svh{
 		margin: 0 auto;
 		width: 80%;
+		margin-top: 16px;
 	}
 	.force-center-align{
 		text-align: center !important;

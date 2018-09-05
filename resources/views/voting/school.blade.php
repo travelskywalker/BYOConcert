@@ -48,7 +48,7 @@
                 </div>
 
                 <div class="col s12 pre-launch-icon">
-                    <img class="responsive-img" src="/images/pre-launch-icons.png">
+                    <img class="responsive-img" style="width: 100%" src="/images/pre-launch-icons.png">
                 </div>
 
                 <div class="switch-button">Switch to List View</div>
@@ -74,7 +74,7 @@
             </div>
             <div class="row no-margin">
                 <div class="col s12 double-padding b-c">
-                <h5 class="nominate-title">BRING #AUTOGRACEAVENUE TO YOU</h5>
+                <h5 class="nominate-title">MORE COMBOS. MORE POINTS!</h5>
                 <p>Use this barcode each time you buy a Slurpee & Big Bite combo to earn points for your school. Make sure to tell your friends - only the top 8 schools get a free concert.</p>
                 <div class="barcode-area" >barcode area</div>
                 <div class="col s7 right-align no-margin right-padding">
