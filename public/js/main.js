@@ -2,8 +2,6 @@ $(document).ready(function(){
   listSchool();
   remain();
 
- 
-
   if($('.school-page').length > 0){
     getSchoolPageData();
     if($(document).width() <= 992) $('.school-list-view').height($('.school-top-container').height() - ($('.school-top-details').height()+35));
@@ -135,15 +133,26 @@ $(document).ready(function(){
         }
       });
     }
-    
   });
 
   $('.back-button').click(function(){
     window.history.back();
   });
 
+  $('.carousel').carousel({
+    dist: 0,
+    fullWidth: true,
+    duration: 100
+  }, setTimeout(autoplay, 2500));
+
   
 });
+
+function autoplay() {
+  setTimeout(autoplay, 2500);
+  $('.carousel').carousel('next');
+
+}
 
 function responsive(){
   $( window ).resize(function() {
@@ -228,8 +237,6 @@ function ucwords(string) {
 	}
 	return str;
 }
-
-
 
 // for school list page\
 function listSchool(){
