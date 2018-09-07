@@ -35,3 +35,4 @@ Route::post('/admin/voting/send', 'VotingController@processUpdate')->name('send-
 
 
 Route::get('/admin/subscribe/{email}', 'SubscriberController@subscribe');
+Route::get('/admin/subscribers', 'SubscriberController@subscribers');

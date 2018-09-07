@@ -19,4 +19,10 @@ class SubscriberController extends Controller
         }
         
     }
+
+    public function subscribers(){
+        $subscribers = Subscriber::all();
+
+        return view('api.subscribers')->with('subscribers',$subscribers);
+    }
 }
