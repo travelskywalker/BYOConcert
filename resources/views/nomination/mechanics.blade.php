@@ -1,5 +1,5 @@
 <ol>
-<li>Nominate your school by filling out the form on this site: <strong>711byoconcert.7-eleven.com.ph</strong>. Nomination period will be from July 9 to July 15, 11:59PM and nomination is open to all schools nationwide.</li>
+<!-- <li>Nominate your school by filling out the form on this site: <strong>711byoconcert.7-eleven.com.ph</strong>. Nomination period will be from July 9 to July 15, 11:59PM and nomination is open to all schools nationwide.</li> -->
 <li>The shortlist of schools will be posted on 7-Eleven Philippines&rsquo; Facebook page on July 18, 2018.</li>
 <ol style="list-style-type: lower-alpha;">
 <li>The shortlisting of the 20 schools will be based on the following considerations:</li>

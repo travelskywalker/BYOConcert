@@ -1,0 +1,19 @@
+/*normal css*/
+.main, body{
+	background: #17B0C0;
+}
+body{
+	min-width: 320px;
+}
+
+h4,h5,h6{
+	font-family: bebas;
+	color: #ffffff;
+}
+p{
+	font-family: gotham-medium;
+    font-size: 10px;
+	color: #ffffff;
+	font-weight: bold;
+}
+
