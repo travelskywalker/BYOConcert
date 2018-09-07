@@ -76,7 +76,7 @@
     
     <script src="{{ asset('materialize/js/materialize.min.js')}}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
-    <script type="application/javascript" src="{{ asset('data/dat.json') }}"></script>
+    <script src="{{ asset('data/dat.js') }}"></script>
     
 </body>
 </html>
