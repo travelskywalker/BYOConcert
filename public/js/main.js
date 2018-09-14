@@ -139,13 +139,15 @@ $(document).ready(function(){
     window.history.back();
   });
 
-  $('.carousel').carousel({
-    dist: 0,
-    fullWidth: true,
-    duration: 100
-  }, setTimeout(autoplay, 2500));
+  setTimeout(() => {
+    $('.carousel').carousel({
+      dist: 0,
+      fullWidth: true,
+      duration: 100
+    }, setTimeout(autoplay, 2500));
+  }, 100);
 
-  
+
 });
 
 function autoplay() {

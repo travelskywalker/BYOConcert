@@ -6,7 +6,7 @@
         <div class="lfw shw full-height-inner center-align center-container">
             <div class="full-width header">
                 <img class="logo" src="/images/BYOC_logo_v2.png"><br>
-                <a style="margin-top: -25%;"class="modal-trigger l-more" href="#learnmore">Learn more</a>
+                <a class="modal-trigger l-more" href="#learnmore">Learn more</a>
                 
                 <!-- <p>BITE AND SLURP YOUR WAY<br/>TO A FREE CONCERT</p>
                 <div class="band-container">
@@ -25,10 +25,10 @@
                     <img class="responsive-img" id="img_1" src="/images/sliders/Bands.gif">
                     <img class="responsive-img" id="img_1" src="/images/sliders/Bands.gif"> -->
                     <div class="carousel carousel-slider">
-                        <a class="carousel-item" href="#one!"><img src="/images/sliders/Bands.png"></a>
-                        <a class="carousel-item" href="#two!"><img src="/images/sliders/BigbiteSlurpee.png"></a>
-                        <a class="carousel-item" href="#three!"><img src="/images/sliders/Prizes.png"></a>
-                        <a class="carousel-item" href="#four!"><img src="/images/sliders/50k.png"></a>
+                        <a class="carousel-item"><img src="/images/sliders/Bands.png"></a>
+                        <a class="carousel-item"><img src="/images/sliders/BigbiteSlurpee.png"></a>
+                        <a class="carousel-item"><img src="/images/sliders/Prizes.png"></a>
+                        <a class="carousel-item"><img src="/images/sliders/50k.png"></a>
                     </div>
                 </div>
             </div>
