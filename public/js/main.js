@@ -138,14 +138,19 @@ $(document).ready(function(){
   $('.back-button').click(function(){
     window.history.back();
   });
-
-  setTimeout(() => {
-    $('.carousel').carousel({
-      dist: 0,
-      fullWidth: true,
-      duration: 100
-    }, setTimeout(autoplay, 2500));
-  }, 100);
+  
+  var images = $(".groupshot img");
+  var loadedImgNum = 0;
+  images.on('load', function(){
+    loadedImgNum += 1;
+    if (loadedImgNum == images.length) {
+      $('.carousel').carousel({
+        dist: 0,
+        fullWidth: true,
+        duration: 100
+      }, setTimeout(autoplay, 2500));
+    }
+  });
 
 
 });
