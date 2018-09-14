@@ -150,6 +150,8 @@ $(document).ready(function(){
         duration: 100
       }, setTimeout(autoplay, 2500));
     }
+  }).each(function(f){
+    $(this).attr('src', $(this).attr('src'));
   });
 
 
