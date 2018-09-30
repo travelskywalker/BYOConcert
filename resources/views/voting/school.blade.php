@@ -39,26 +39,30 @@
     
         <div class="school-top-section">
             <div class="row padding school-top-container" >
-                <!-- old -->
-                <div class="col s12 l5 school-top-details" style="padding: 15px 0; display: none">
-                    <div class="school-logo"></div>
-                    <div class="school-place"></div>
-                    <div class="school-name"></div>
-                    <!-- <div class="switch-button">Switch to List View</div> -->
-                </div>
-                <!-- end of old -->
                 <div class="col s12 school-pre-details no-padding">
                     <div class="school-logo"></div>
+                    <div class="rank"></div>
                     <div class="school-name"></div>
                     <div class="back-button"></div>
                 </div>
 
-                <div class="col s12 pre-launch-stage">
-                    <img class="responsive-img" src="/images/stage-pre-launch.png">
-                </div>
+                <div class="col s12 pre-launch-stage"></div>
 
-                <div class="col s12 pre-launch-icon">
-                    <img class="responsive-img" style="width: 100%" src="/images/pre-launch-icons.png">
+                <div class="col s12 pre-launch-icon"></div>
+
+                <div class="col bar s12">
+                    <div class="valign-wrapper">
+                        <div class="bar-container s12 l6">
+                            <div class="bar-progress">
+                                <div class="percent-container">
+                                    <!-- <span class="percent">60%</span><span class="bar-prompt">until milestone complete</span> -->
+                                </div>
+                                
+                            </div>
+                            <div class="prompt-container"></div>
+                            <div class="milestone-container"></div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="switch-button">Switch to List View</div>
@@ -85,7 +89,7 @@
             <div class="row no-margin">
                 <div class="col s12 double-padding b-c">
                 <h5 class="nominate-title">MORE COMBOS. MORE POINTS!</h5>
-                <p>Use this barcode each time you buy a Slurpee & Big Bite combo to earn points for your school. Make sure to tell your friends - only the top 8 schools get a free concert.</p>
+                <p class="nominate-details">Use this barcode each time you buy a Slurpee & Big Bite combo to earn points for your school. Make sure to tell your friends - only the top 8 schools get a free concert.</p>
                 <div class="barcode-area" >barcode area</div>
                 <div class="col s7 right-align no-margin right-padding">
                         <a class="btn btn-small default-button barcode-download" download>Download

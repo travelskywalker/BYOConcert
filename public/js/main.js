@@ -25,12 +25,6 @@ $(document).ready(function(){
     }
   });
 
-  // $('#subscribe').modal({
-  //   onCloseEnd: function(){
-  //     $('#email').val('');
-  //   }
-  // });
-
   $('#school').keyup(function(){
 
     if($(this).val().length >= 2){
@@ -114,8 +108,6 @@ $(document).ready(function(){
       $(this).html('Switch to List View');
     }
 
-    // $('.school-stage-view').toggle();
-    // $('.school-list-view').toggle();
     $('.pre-launch-stage').toggle();
     $('.pre-launch-icon').toggle();
   });
@@ -266,7 +258,7 @@ function listView(data){
   container+='<div class="grid" name="'+data.name+'">';
   container+='<div class="school-logo"><img class="responsive-img" src="/images/schools/logo/'+data.logo+'"></div>'; 
   container+='<div class="g-content">';
-  container+='<div class="stage" style="background: url(\'/images/schools/logo/'+data.logo+'\')"></div>';
+  container+='<div class="stage" style="background: url(\'/images/stages/stage-'+data.color+'.png\')"></div>';
   container+='<div class="school-details">';
   container+='<div class="school-name">'+data.name+'</div>';
   container+='<div class="school-place">'+data.place+'</div>';
@@ -294,35 +286,46 @@ function getSchoolPageData(){
 
 // load school data in school page
 function loadSchoolPageData(data){
-  $('.school-stage-view').addClass('stage-'+getStageProgress(data.progress));
-  $('.school-list-view').html('<img class="responsive-img" src="/images/icon-'+getStageProgress(data.progress)+'.png">');
+  // load page header (stage and icon and details)
+  if(data.milestone == 9) $('.pre-launch-stage').html('<img class="responsive-img" src="/images/stages/stage-'+data.color+'.png">');
+  else $('.pre-launch-stage').html('<img class="responsive-img" src="/images/stages/stage-'+(data.milestone-1)+'.png">');
+
+  $('.pre-launch-icon').html('<img class="responsive-img" src="/images/icons/icon-'+(data.milestone-1)+'.png">');
   $('.school-logo').html('<img class="responsive-img" src="/images/schools/logo/'+data.logo+'">');
-  $('.school-place').html(data.place);
   $('.school-name').html(data.long_name);
+  $('.rank').html(data.place);
 
+  // load page copy
+  if(data.rank <= 4){
+    console.log('copy 1');
+    $('.nominate-title').html(copy.title[0]);
+    $('.nominate-details').html(copy.details[1]);
+  }else if(data.rank > 4 && data.rank <= 8 ){
+    console.log('copy 2');
+    $('.nominate-title').html(copy.title[1]);
+    $('.nominate-details').html(copy.details[1]);
+  }else{
+    console.log('copy 3');
+    $('.nominate-title').html(copy.title[2]);
+    $('.nominate-details').html(copy.details[2]);
+  }
+
+  // show rank for top 8 schools
+  if(data.rank <= 8){
+    $('.school-top-section .rank').show();
+  }
+
+  // load page barcode
   $('.barcode-area').html('<img class="responsive-img" src="/images/schools/barcode/'+data.barcode+'">');
-
   $('.barcode-download').attr('href', '/images/schools/barcode/'+data.barcode);
-  // get stage display
-  // get progress icon display
+ 
+  var icon_arr = ["blank", "Amplifier", "Electric Guitar", "Acoustic Guitar", "Keyboard", "Drum Set", "DJ", "Lights", "Speakers", "Tube Man"];
+
   $('.bar-progress').css('width', data.progress+'%');
-  if(data.progress <= 35){
-    $('.percent-container').css('position', 'absolute').css('margin-left', data.progress+'%');
-  }
+  $('.prompt-container').html('<span class="percent">'+data.progress+'%</span> until '+icon_arr[data.milestone]+' unlocks');
 
-  if(data.progress == 100){
-    $('.bar-prompt').html('completed').css('font-size','10px');
-  }
-
-  if(data.progress == 0){
-    $('.bar-progress').css('background','none');
-  }
-
-  $('.percent').html(data.progress+'%');
-}
-
-function getStageProgress(progress){
-  return Math.trunc(progress/7);
+  $('.milestone-container').html('<img class="responsive-img" src="/images/icons/icons/'+data.milestone+'.png">');
+  
 }
 
 // countdown timer

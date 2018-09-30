@@ -95,6 +95,7 @@
 	.grid-container {
 		max-height: 70vh;
 		overflow: scroll;
+		padding-top: 10px !important;
 	}
 
 	.barcode-area{
@@ -119,6 +120,15 @@
 
 	.l-more{
 		margin-top: -25vh !important;
+	}
+
+	.rank{
+		top: 15px;
+		left: 80px;
+	}
+	.bar-container {
+		width: 60%;
+		margin: 0 auto;
 	}
 	
 }
@@ -226,6 +236,15 @@
 	.voting-page .top-section {
 		max-height: 550px;
 	}
+
+	.rank {
+		top: 34px;
+		margin-left: 70px;
+	}
+
+	.bar-container{
+		width: 100%;
+	}
 }
 /*small screen*/
 @media only screen and (max-width: 600px) {
@@ -332,6 +351,12 @@
 }
 
 /*normal css*/
+.rank {
+	font-family: "gotham-bold";
+	text-transform: uppercase;
+	position: absolute;
+	display: none;
+}
 .main, body{
 	background: #17B0C0;
 }
@@ -348,7 +373,6 @@ h4,h5,h6{
 }
 .double-padding{
 	padding: 16px 24px !important;
-	
 }
 .b-c{
 	background: url(/images/big-red-bg-tile.jpg);
@@ -368,7 +392,6 @@ a{
 	font-family: gotham-medium;
 	color: #D8D20E;
 	font-size: 10px;
-
 }
 
 .band-container {
@@ -690,9 +713,9 @@ ol {
 
 .bar-container {
     height: 25px;
-	width: 100%;
 	border-radius: 30px;
 	background: #01878e;
+	position: relative;
 }
 
 .bar-progress {
@@ -705,6 +728,18 @@ ol {
 	text-align: right;
 }
 
+.milestone-container {
+	z-index: 3;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 0;
+    top: -8px;
+    border-radius: 40px;
+    background: #17B0C0;
+    box-shadow: -1px -1px 7px 0px #42424245;
+}
+
 .barcode-area {
     padding: 10px;
     padding-bottom: 0;
@@ -715,7 +750,7 @@ ol {
 .percent-container.absolute{
 	position: absolute;
 }
-span.bar-prompt {
+span.bar-prompt, {
     font-size: 6px;
     font-family: gotham-light;
     margin-left: 5px;
@@ -723,6 +758,21 @@ span.bar-prompt {
 	margin-top: 5px;
 	text-align: left;
 	display: inline-block;
+}
+.prompt-container{
+	font-family: gotham-light;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    font-size: 8px;
+	padding: 3.5px;
+	color: #ffffff;
+}
+
+.prompt-container .percent{
+	font-size: 13px;
+    vertical-align: middle;
 }
 
 .school-page .school-logo {
@@ -755,10 +805,11 @@ span.bar-prompt {
 	font-size: 10px;
 	color: #D8D20E;
 	position: absolute;
-    bottom: 22px;
+    bottom: 43px;
     margin: 0 auto;
     left: 0;
-    right: 0;
+	right: 0;
+	background: #ffffff;
 }
 
 .school-page .counter-container{
@@ -772,34 +823,50 @@ span.bar-prompt {
 }
 
 .stage-0{
-	background: url(/images/stage-0.png);
+	background: url(/images/stages/stage-0.png);
 }
 .stage-1{
-	background: url(/images/stage-1.png);
+	background: url(/images/stages/stage-1.png);
 }
 .stage-2{
-	background: url(/images/stage-2.png);
+	background: url(/images/stages/stage-2.png);
 }
 .stage-3{
-	background: url(/images/stage-3.png);
+	background: url(/images/stages/stage-3.png);
 }
 .stage-4{
-	background: url(/images/stage-4.png);
+	background: url(/images/stages/stage-4.png);
 }
 .stage-5{
-	background: url(/images/stage-5.png);
+	background: url(/images/stages/stage-5.png);
 }
 .stage-6{
-	background: url(/images/stage-6.png);
+	background: url(/images/stages/stage-6.png);
 }
 .stage-7{
-	background: url(/images/stage-7.png);
+	background: url(/images/stages/stage-7.png);
 }
 .stage-8{
-	background: url(/images/stage-8.png);
+	background: url(/images/stages/stage-8.png);
 }
+.stage-green{
+	background: url(/images/stages/stage-green.png);
+}
+.stage-blue{
+	background: url(/images/stages/stage-blue.png);
+}
+.stage-red{
+	background: url(/images/stages/stage-red.png);
+}
+.stage-yellow{
+	background: url(/images/stages/stage-yellow.png);
+}
+
+
+
+/* 
 .stage-9{
-	background: url(/images/stage-9.png);
+	background: url(/images/stages/stage-9.png);
 }
 .stage-10{
 	background: url(/images/stage-10.png);
@@ -815,7 +882,7 @@ span.bar-prompt {
 }
 .stage-14{
 	background: url(/images/stage-14.png);
-}
+} */
 
 .school-list-view{
 	display:none;
@@ -831,7 +898,7 @@ span.bar-prompt {
 
 /*pre launch css*/
 .voting-page .school-logo{
-	display: none;
+	/* display: none; */
 }
 
 .voting-page .stage{
@@ -843,12 +910,12 @@ span.bar-prompt {
 }
 
 .voting-page .school-place{
-	display: none;
+	/* display: none; */
 }
 
 .voting-page .school-name {
-    text-align: center;
-    padding-top: 8px;
+    /* text-align: center;
+    padding-top: 8px; */
 }
 
 .barcode-area{
@@ -898,6 +965,7 @@ span.bar-prompt {
 		width: 100%;
 		margin-top: -16px;
 	}
+
 }
 
 @media only screen and (min-width: 420px) and (max-width: 992px) {
@@ -925,7 +993,7 @@ span.bar-prompt {
 @media only screen and (min-width: 993px){
 	.school-page .school-name{
 	    margin-left: 65px;
-	    margin-top: -53px;
+	    margin-top: -48px;
 	    text-align: left;
 	    line-height: 1.5rem;
 	    font-size: 1.3rem;
