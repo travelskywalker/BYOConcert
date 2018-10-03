@@ -1,5 +1,5 @@
 var school_data = {
-    "nextUpdate" : "09/28/2018 12:00 AM", //mm/dd/yyyy hh:mm -- date and time
+    "nextUpdate" : "10/12/2018 12:00 AM", //mm/dd/yyyy hh:mm -- date and time
     "schools" : [
                 {  
                     "name" : "RTU-Boni", //school name
@@ -13,26 +13,26 @@ var school_data = {
                     "barcode": "RTU.png" //barcode image name
                 },
                 {  
-                    "name" : "PLMun", //school name
-                    "long_name" : "Pamantasan ng Lungsod ng Muntinlupa",
-                    "logo" : "PLMun.png", //logo image name
-                    "place": "2nd Place", //place
-                    "rank" : 2,
-                    "color" : "green",
-                    "milestone" : 2,
-                    "progress": 50, //input should be number
-                    "barcode": "PLMun.png" //barcode image name
-                },
-                {  
                     "name" : "PUP SMB", //school name
                     "long_name" : "Polytechnic University of the Philippines - Sta. Maria, Bulacan",
                     "logo" : "PUPSMB.png", //logo image name
-                    "place": "3rd Place", //place
-                    "rank" : 3,
+                    "place": "2nd Place", //place
+                    "rank" : 2,
                     "color" : "red",
                     "milestone" : 2,
                     "progress": 50, //input should be number
                     "barcode": "PUPSMB.png" //barcode image name
+                },
+                {  
+                    "name" : "PLMun", //school name
+                    "long_name" : "Pamantasan ng Lungsod ng Muntinlupa",
+                    "logo" : "PLMun.png", //logo image name
+                    "place": "3rd Place", //place
+                    "rank" : 3,
+                    "color" : "green",
+                    "milestone" : 2,
+                    "progress": 50, //input should be number
+                    "barcode": "PLMun.png" //barcode image name
                 },
                 {  
                     "name" : "PCC", //school name
@@ -239,6 +239,6 @@ var copy = {
     "details" : [
                 "Continue to buy Big Bite & Slurpee combos<br>for your school and use this barcode. The school<br>who wins 1st place gets an additional 50K!",
                 "Ensure a free concert at your school. Use this barcode<br>each time you buy a Big Bite & Slurpee combo<br>to continue earning points for your school.",
-                "Use this barcode each time you buy a Big Bite & Slurpee combo<br>to earn points for your school."
+                "Use this barcode each time you buy a<br>Big Bite & Slurpee combo<br>to earn points for your school."
             ]
 }

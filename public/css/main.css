@@ -218,7 +218,7 @@
 		margin-top: -13px;
 	}
 	.school-page .counter{
-		margin-top: -10px;
+		margin-top: -13px;
 		position: absolute;
 		width: 100%;
 	}
@@ -948,13 +948,13 @@ span.bar-prompt, {
 
 	.counter-container {
 		background: #ffffff;
-		width: 270px;
+		width: 225px;
 		height: 30px;
-		padding: 6px 12px;
+		padding: 8px 10px;
 		text-align: center;
 		border-radius: 31px;
 		font-family: gotham-medium;
-		font-size: 13px;
+		font-size: 11px;
 		color: #EA341C;
 		margin: 0 auto;
 		text-transform: uppercase;
