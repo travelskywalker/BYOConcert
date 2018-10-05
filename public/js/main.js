@@ -330,7 +330,8 @@ function loadSchoolPageData(data){
   var icon_arr = ["blank", "Amplifier", "Electric Guitar", "Acoustic Guitar", "Keyboard", "Drum Set", "DJ", "Lights", "Speakers", "Tube Man"];
 
   $('.bar-progress').css('width', data.progress+'%');
-  $('.prompt-container').html('<span class="percent">'+data.progress+'%</span> until '+icon_arr[data.milestone]+' unlocks');
+  var unlock = (data.milestone == 7) ? 'unlock':'unlocks';
+  $('.prompt-container').html('<span class="percent">'+data.progress+'%</span> until '+icon_arr[data.milestone]+' '+unlock);
 
   $('.milestone-container').html('<img class="responsive-img" src="/images/icons/icons/'+data.milestone+'.png">');
   
