@@ -36,7 +36,7 @@ var school_data = {
                 },
                 { 
                     "name" : "LCUP",
-                    "long_name" : "La Consolaction University Philippines - Bulacan",
+                    "long_name" : "La Consolacion University Philippines - Bulacan",
                     "logo" : "LCUP.png",
                     "place": "4th Place",
                     "rank" : 4,
