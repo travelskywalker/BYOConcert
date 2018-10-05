@@ -82,16 +82,12 @@ $(document).ready(function(){
     // Get the storedValue
     var previousValue = $(this).data('storedValue');
     // if previousValue = true then
-    //     Step 1: toggle radio button check mark.
-    //     Step 2: save data-StoredValue as false to indicate radio button is unchecked.
     if (previousValue) {
       $(this).prop('checked', !previousValue);
       $(this).data('storedValue', !previousValue);
     }
     // If previousValue is other than true
-    //    Step 1: save data-StoredValue as true to for currently checked radio button.
-    //    Step 2: save data-StoredValue as false for all non-checked radio buttons.
-    else{
+     else{
       $(this).data('storedValue', true);
       $("input[type=radio]:not(:checked)").data("storedValue", false);
     }
@@ -318,6 +314,18 @@ function loadSchoolPageData(data){
   // load page barcode
   $('.barcode-area').html('<img class="responsive-img" src="/images/schools/barcode/'+data.barcode+'">');
   $('.barcode-download').attr('href', '/images/schools/barcode/'+data.barcode);
+ 
+  /*
+  1 "Amplifier"
+  2 "Electric Guitar"
+  3 "Acoustic Guitar"
+  4 "Keyboard"
+  5 "Drum Set"
+  6 "DJ"
+  7 "Lights"
+  8 "Speakers"
+  9 "Tube Man" 
+  */
  
   var icon_arr = ["blank", "Amplifier", "Electric Guitar", "Acoustic Guitar", "Keyboard", "Drum Set", "DJ", "Lights", "Speakers", "Tube Man"];
 

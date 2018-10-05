@@ -8,54 +8,54 @@ var school_data = {
                     "place": "1st Place", //place
                     "rank" : 1,
                     "color" : "blue",
-                    "milestone" : 3,
-                    "progress": 60, //input should be number
+                    "milestone" : 7,
+                    "progress": 40, //input should be number
                     "barcode": "RTU.png" //barcode image name
-                },
-                {  
-                    "name" : "PUP SMB", //school name
-                    "long_name" : "Polytechnic University of the Philippines - Sta. Maria, Bulacan",
-                    "logo" : "PUPSMB.png", //logo image name
-                    "place": "2nd Place", //place
-                    "rank" : 2,
-                    "color" : "red",
-                    "milestone" : 2,
-                    "progress": 50, //input should be number
-                    "barcode": "PUPSMB.png" //barcode image name
                 },
                 {  
                     "name" : "PLMun", //school name
                     "long_name" : "Pamantasan ng Lungsod ng Muntinlupa",
                     "logo" : "PLMun.png", //logo image name
-                    "place": "3rd Place", //place
-                    "rank" : 3,
+                    "place": "2nd Place", //place
+                    "rank" : 2,
                     "color" : "green",
-                    "milestone" : 2,
-                    "progress": 50, //input should be number
+                    "milestone" : 5,
+                    "progress": 90, //input should be number
                     "barcode": "PLMun.png" //barcode image name
                 },
                 {  
-                    "name" : "PCC", //school name
-                    "long_name" : "Pasig Catholic College",
-                    "logo" : "PCC.png", //logo image name
-                    "place": "4th Place", //place
-                    "rank" : 4,
+                    "name" : "PUP SMB", //school name
+                    "long_name" : "Polytechnic University of the Philippines - Sta. Maria, Bulacan",
+                    "logo" : "PUPSMB.png", //logo image name
+                    "place": "3rd Place", //place
+                    "rank" : 3,
                     "color" : "red",
-                    "milestone" : 2,
-                    "progress": 60, //input should be number
-                    "barcode": "PCC.png" //barcode image name
+                    "milestone" : 4,
+                    "progress": 90, //input should be number
+                    "barcode": "PUPSMB.png" //barcode image name
                 },
                 { 
                     "name" : "LCUP",
                     "long_name" : "La Consolaction University Philippines - Bulacan",
                     "logo" : "LCUP.png",
-                    "place": "5th Place",
-                    "rank" : 5,
+                    "place": "4th Place",
+                    "rank" : 4,
                     "color" : "blue",
-                    "milestone" : 2,
-                    "progress": 60,
+                    "milestone" : 4,
+                    "progress": 80,
                     "barcode": "LCUP.png" 
                 }, 
+                {  
+                    "name" : "PCC", //school name
+                    "long_name" : "Pasig Catholic College",
+                    "logo" : "PCC.png", //logo image name
+                    "place": "5th Place", //place
+                    "rank" : 5,
+                    "color" : "red",
+                    "milestone" : 3,
+                    "progress": 80, //input should be number
+                    "barcode": "PCC.png" //barcode image name
+                },
                 {  
                     "name" : "STI ORCA", //school name
                     "long_name" : "STI College Ortigas - Cainta",
@@ -63,8 +63,8 @@ var school_data = {
                     "place": "6th Place", //place
                     "rank" : 6,
                     "color" : "yellow",
-                    "milestone" : 2,
-                    "progress": 70, //input should be number
+                    "milestone" : 3,
+                    "progress": 90, //input should be number
                     "barcode": "STIORCA.png" //barcode image name
                 },
                 {  
@@ -74,8 +74,8 @@ var school_data = {
                     "place": "7th Place", //place
                     "rank" : 7,
                     "color" : "blue",
-                    "milestone" : 2,
-                    "progress": 80, //input should be number
+                    "milestone" : 3,
+                    "progress": 90, //input should be number
                     "barcode": "NU.png" //barcode image name
                 },
                 {  //school 1
@@ -85,7 +85,7 @@ var school_data = {
                     "place": "8th Place", //place
                     "rank" : 8,
                     "color" : "green",
-                    "milestone" : 2,
+                    "milestone" : 4,
                     "progress": 90, //input should be number
                     "barcode": "BASC.png" //barcode image name
                 }, //end of school 1
@@ -97,7 +97,7 @@ var school_data = {
                     "place": "", //place
                     "rank" : 9,
                     "color" : "red",
-                    "milestone" : 1,
+                    "milestone" : 2,
                     "progress": 90, //input should be number
                     "barcode": "LPUB.png" //barcode image name
                 },
@@ -110,7 +110,7 @@ var school_data = {
                     "rank" : 10,
                     "color" : "blue",
                     "milestone" : 1,
-                    "progress": 100, //input should be number
+                    "progress": 90, //input should be number
                     "barcode": "PSU.png" //barcode image name
                 },
                 
@@ -133,7 +133,7 @@ var school_data = {
                     "place": "", //place
                     "rank" : 12,
                     "color" : "blue",
-                    "milestone" : 1,
+                    "milestone" : 2,
                     "progress": 80, //input should be number
                     "barcode": "PNU.png" //barcode image name
                 },
@@ -144,7 +144,7 @@ var school_data = {
                     "place": "", //place\
                     "rank" : 13,
                     "color" : "blue",
-                    "milestone" : 1,
+                    "milestone" : 2,
                     "progress": 80, //input should be number
                     "barcode": "PSBAQC.png" //barcode image name
                 },
@@ -156,7 +156,7 @@ var school_data = {
                     "place": "", //place
                     "rank" : 14,
                     "color" : "red",
-                    "milestone" : 1,
+                    "milestone" : 2,
                     "progress": 90, //input should be number
                     "barcode": "SBCA.png" //barcode image name
                 },
@@ -167,8 +167,8 @@ var school_data = {
                     "place": "", //place
                     "rank" : 15,
                     "color" : "red",
-                    "milestone" : 1,
-                    "progress": 100, //input should be number
+                    "milestone" : 2,
+                    "progress": 90, //input should be number
                     "barcode": "SSCR.png" //barcode image name
                 },
                 {  
@@ -179,7 +179,7 @@ var school_data = {
                     "rank" : 16,
                     "color" : "yellow",
                     "milestone" : 1,
-                    "progress": 0, //input should be number
+                    "progress": 90, //input should be number
                     "barcode": "STIGLOBAL.png" //barcode image name
                 },
                 
@@ -190,8 +190,8 @@ var school_data = {
                     "place": "", //place
                     "rank" : 18,
                     "color" : "yellow",
-                    "milestone" : 1,
-                    "progress": 80, //input should be number
+                    "milestone" : 2,
+                    "progress": 90, //input should be number
                     "barcode": "TIPManila.png" //barcode image name
                 },
                 {  
@@ -202,7 +202,7 @@ var school_data = {
                     "rank" : 19,
                     "color" : "green",
                     "milestone" : 1,
-                    "progress": 100, //input should be number
+                    "progress": 90, //input should be number
                     "barcode": "TUA.png" //barcode image name
                 },
                 {  
@@ -212,8 +212,8 @@ var school_data = {
                     "place": "", //place
                     "rank" : 17,
                     "color" : "red",
-                    "milestone" : 1,
-                    "progress": 80, //input should be number
+                    "milestone" : 2,
+                    "progress": 90, //input should be number
                     "barcode": "UE.png" //barcode image name
                 },
                 {  
@@ -224,7 +224,7 @@ var school_data = {
                     "rank" : 20,
                     "color" : "blue",
                     "milestone" : 1,
-                    "progress": 100, //input should be number
+                    "progress": 90, //input should be number
                     "barcode": "WVSU.png" //barcode image name
                 },
                 ]
