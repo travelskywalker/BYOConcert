@@ -283,7 +283,7 @@ function getSchoolPageData(){
 // load school data in school page
 function loadSchoolPageData(data){
   // load page header (stage and icon and details)
-  if(data.milestone == 9) $('.pre-launch-stage').html('<img class="responsive-img" src="/images/stages/stage-'+data.color+'.png">');
+  if(data.milestone == 10) $('.pre-launch-stage').html('<img class="responsive-img" src="/images/stages/stage-'+data.color+'.png">');
   else $('.pre-launch-stage').html('<img class="responsive-img" src="/images/stages/stage-'+(data.milestone-1)+'.png">');
 
   $('.pre-launch-icon').html('<img class="responsive-img" src="/images/icons/icon-'+(data.milestone-1)+'.png">');
@@ -314,6 +314,7 @@ function loadSchoolPageData(data){
   // load page barcode
   $('.barcode-area').html('<img class="responsive-img" src="/images/schools/barcode/'+data.barcode+'">');
   $('.barcode-download').attr('href', '/images/schools/barcode/'+data.barcode);
+  
  
   /*
   1 "Amplifier"
@@ -329,9 +330,11 @@ function loadSchoolPageData(data){
  
   var icon_arr = ["blank", "Amplifier", "Electric Guitar", "Acoustic Guitar", "Keyboard", "Drum Set", "DJ", "Lights", "Speakers", "Tube Man"];
 
+  if(data.milestone == 10) $('.bar-container').hide();
+
   $('.bar-progress').css('width', data.progress+'%');
   var unlock = (data.milestone == 7) ? 'unlock':'unlocks';
-  $('.prompt-container').html('<span class="percent">'+data.progress+'%</span> until '+icon_arr[data.milestone]+' '+unlock);
+  $('.prompt-container').html('<span class="percent">'+(100-data.progress)+'%</span> until '+icon_arr[data.milestone]+' '+unlock);
 
   $('.milestone-container').html('<img class="responsive-img" src="/images/icons/icons/'+data.milestone+'.png">');
   
