@@ -1,5 +1,5 @@
 var school_data = {
-    "nextUpdate" : "10/12/2018 12:00 AM", //mm/dd/yyyy hh:mm -- date and time
+    "nextUpdate" : "11/2/2018 12:00 AM", //mm/dd/yyyy hh:mm -- date and time
     "schools" : [
                 {  
                     "name" : "RTU-Boni", //school name
